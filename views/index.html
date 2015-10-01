@@ -63,12 +63,14 @@
                 width: 100px;
             }
 
+            .hide{  display: none;}
+
 </style>
 
 
 
 </head>
-
+<title>HOME</title>
 <body>
 
  <div class="navbar navbar-material-blue">
@@ -118,7 +120,7 @@
 
   <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+      <div id="avatar" class="row hide">
           <div class="redBg panel panel-material-red redBg">
             <div class="panel-body panel-body-material-red ">
              <div align="center" class="row">
@@ -130,15 +132,15 @@
                </div>
 
                <div class="col-md-1 classWithPad shadow-z-1">
-                <h4>20</h4>
+                <h4>0</h4>
                 <h4>m1.Large</h4>
             </div>
             <div class="col-md-1 classWithPad shadow-z-1">
-                <h4>5</h4>
+                <h4>0</h4>
                 <h4>HAProxy</h4>
             </div>
             <div class="col-md-1 classWithPad shadow-z-1">
-            <h4>3</h4>
+            <h4>0</h4>
                 <h4>ELB</h4>
            </div>
            <div class="col-md-2">
@@ -200,6 +202,49 @@
 
 
 </div>
+
+ <div class="row">
+          <div class="grnBg panel panel-material-red grnBg">
+            <div class="panel-body panel-body-material-red ">
+             <div align="center" class="row">
+               <div align="center" class="col-md-2">
+
+                   <i class="fa mdi-action-dns iconFont"></i>
+
+                   <div ><H3>BLUESKY</H3></div>
+               </div>
+
+               <div class="col-md-1 classWithPad shadow-z-1">
+                <h4>22</h4>
+                <h4>m1.Large</h4>
+            </div>
+            <div class="col-md-1 classWithPad shadow-z-1">
+                <h4>6</h4>
+                <h4>HAProxy</h4>
+            </div>
+            <div class="col-md-1 classWithPad shadow-z-1">
+            <h4></h4>
+            <h4>3</h4>
+                <h4>ELB</h4>
+           </div>
+           <div class="col-md-2">
+               <div id="chartcpu2_div" style="width: 200px; height: 120px;"></div>
+           </div>
+           <div class="col-md-2">
+               <div id="chartmem2_div" style="width: 200px; height: 120px;"></div>
+           </div>
+           <div class="col-md-2">
+
+            <a href="release" class="btn btn-primary btn-raised">release</a>
+            <a href="scale" class="btn btn-success btn-raised">&nbsp;&nbsp;SCALE &nbsp;&nbsp;</a>
+            <a href="kpi" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
 <!-- <div class="row">
   <div class="grnBg panel panel-material-red ">
     <div class="panel-body panel-body-material-red ">
@@ -236,10 +281,21 @@
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
 <script>
+
+ function getParameterByName(name) {
+   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+   var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+       results = regex.exec(location.search);
+   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
     $(document).ready(function() {
                 // This command is used to initialize some elements and make them work properly
                 $.material.init();
             });
+
+    if(getParameterByName('t')){
+        $("#avatar").removeClass("hide");
+    }
 
 
 </script>
@@ -264,7 +320,7 @@
       ['MAY',  10,      10],
       ['JUNE',  25,       18],
       ['JULY',  17,      20],
-       ['AUG',  30,      30],
+       ['AUG',  30,      20],
         ['SEP',  20,      18]
       ]);
     var optionscpu = {
@@ -299,11 +355,6 @@
  titleTextStyle:{ color:'white' }
 };
 
-var chartcpu = new google.visualization.AreaChart(document.getElementById('chartcpu_div'));
-chartcpu.draw(datac, optionscpu);
-
-var chartmem = new google.visualization.AreaChart(document.getElementById('chartmem_div'));
-chartmem.draw(datam, optionsmem);
 
 
   var datac1 = google.visualization.arrayToDataTable([
@@ -324,6 +375,26 @@ chartmem.draw(datam, optionsmem);
       ['JULY',  17,      20],
        ['AUG',  30,      30],
         ['SEP',  20,      18]
+      ]);
+
+   var datacn = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  0,      0],
+      ['MAY',  0,      0],
+      ['JUNE',  0,       0],
+      ['JULY', 0,      0],
+       ['AUG',  0,      0],
+        ['SEP',  0,      0]
+      ]);
+
+ var datamn = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  0,      0],
+      ['MAY',  0,      0],
+      ['JUNE',  0,       0],
+      ['JULY', 0,      0],
+       ['AUG',  0,      0],
+        ['SEP',  0,      0]
       ]);
 
 var options1cpu = {
@@ -358,12 +429,56 @@ var options1mem = {
  titleTextStyle:{ color:'white' }
 };
 
+var options2cpu = {
+  title: 'CPU',
+  hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+  vAxis: {minValue: 0},
+ backgroundColor: 'rgb(76, 175, 80)',
+  hAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ vAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ titleTextStyle:{ color:'white' }
+};
+var options2mem = {
+  title: 'MEMORY',
+  hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+  vAxis: {minValue: 0},
+  backgroundColor: 'rgb(76, 175, 80)',
+  hAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ vAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ titleTextStyle:{ color:'white' }
+};
+
+var chartcpu = new google.visualization.AreaChart(document.getElementById('chartcpu_div'));
+chartcpu.draw(datacn, optionscpu);
+
+var chartmem = new google.visualization.AreaChart(document.getElementById('chartmem_div'));
+chartmem.draw(datamn, optionsmem);
+
 
 var chartcpu1 = new google.visualization.AreaChart(document.getElementById('chartcpu1_div'));
-chartcpu1.draw(datac1, options1cpu);
+chartcpu1.draw(datac, options1cpu);
 
 var chartmem1 = new google.visualization.AreaChart(document.getElementById('chartmem1_div'));
-chartmem1.draw(datam1, options1mem);
+chartmem1.draw(datam, options1mem);
+
+
+var chartcpu2 = new google.visualization.AreaChart(document.getElementById('chartcpu2_div'));
+chartcpu2.draw(datac1, options2cpu);
+
+var chartmem2 = new google.visualization.AreaChart(document.getElementById('chartmem2_div'));
+chartmem2.draw(datam1, options2mem);
 }
 </script>
 
