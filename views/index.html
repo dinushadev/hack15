@@ -54,6 +54,15 @@
 
 }
 
+  .btn-circle.btn-xl {
+                border-radius: 50px;
+                font-size: 24px;
+                height: 100px;
+                line-height: 1.33;
+                padding: 10px 16px;
+                width: 100px;
+            }
+
 </style>
 
 
@@ -69,11 +78,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">GARFIELD</a>
+         <a class="navbar-brand" href="home">GARFIELD</a>
+                    <img width="80" height="50" alt="server" src="../dist/img/garfieldcat.png">
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="javascript:void(0)">History</a></li>
             <li><a href="reg">NEW APP</a></li>
 
         </ul>
@@ -81,7 +90,7 @@
             <input type="text" class="form-control col-lg-8" placeholder="APP NAME">
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="javascript:void(0)">LOG OUT</a></li>
+            <li><a href="/">LOG OUT</a></li>
        <!--      <li class="dropdown">
                 <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -105,6 +114,8 @@
       </div>
   </div> -->
 
+   
+
   <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -115,20 +126,20 @@
 
                    <i class="fa mdi-action-dns iconFont"></i>
 
-                   <div ><H3>PORTELLO</H3></div>
+                   <div ><H3>AVATAR</H3></div>
                </div>
 
                <div class="col-md-1 classWithPad shadow-z-1">
-                <h4>10</h4>
-                <h4>m1.large</h4>
+                <h4>20</h4>
+                <h4>m1.Large</h4>
             </div>
             <div class="col-md-1 classWithPad shadow-z-1">
-                <h4>2</h4>
+                <h4>5</h4>
                 <h4>HAProxy</h4>
             </div>
             <div class="col-md-1 classWithPad shadow-z-1">
-
-               <h4>some this</h4>
+            <h4>3</h4>
+                <h4>ELB</h4>
            </div>
            <div class="col-md-2">
                <div id="chartcpu_div" style="width: 200px; height: 120px;"></div>
@@ -140,7 +151,7 @@
 
             <a href="release" class="btn btn-primary btn-raised">release</a>
             <a href="scale" class="btn btn-success btn-raised">&nbsp;&nbsp;SCALE &nbsp;&nbsp;</a>
-            <a href="javascript:void(0)" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
+            <a href="kpi" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
         </div>
     </div>
 </div>
@@ -156,19 +167,20 @@
        <div align="center" class="col-md-2 ">
          <i class="fa mdi-action-dns iconFont"></i>
 
-         <div align="center"><H3>MLPUI</H3></div>
+         <div align="center"><H3>DRAGON</H3></div>
      </div>
      <div class="col-md-1 classWithPad shadow-z-1">
-        <h4>12</h4>
+        <h4>32</h4>
         <h4>C1.Large</h4>
     </div>
     <div class="col-md-1 classWithPad shadow-z-1">
-        <h4>2</h4>
+        <h4>5</h4>
         <h4>HAProxy</h4>
     </div>
     <div class="col-md-1 classWithPad shadow-z-1">
-
-       <h4>some this</h4>
+  <h4>3</h4>
+                <h4>ELB</h4>
+           
    </div>
    <div class="col-md-2 ">
        <div id="chartcpu1_div" style="width: 200px; height: 120px;"></div>
@@ -180,7 +192,7 @@
 
     <a href="release" class="btn btn-primary btn-raised">release</a>
     <a href="scale" class="btn btn-success btn-raised">&nbsp;&nbsp;SCALE &nbsp;&nbsp;</a>
-    <a href="javascript:void(0)" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
+    <a href="kpi" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
 </div>
 </div>
 </div>
@@ -296,12 +308,12 @@ chartmem.draw(datam, optionsmem);
 
   var datac1 = google.visualization.arrayToDataTable([
       ['Month', 'Sales', 'Expenses'],
-      ['APR',  5,      7],
-      ['MAY',  6,      10],
+      ['APR',  5,      10],
+      ['MAY',  8,      10],
       ['JUNE',  4,       5],
-      ['JULY',  11,      20],
-       ['AUG',  20,      18],
-        ['SEP',  16,      18]
+      ['JULY',  14,      23],
+       ['AUG',  6,      28],
+        ['SEP',  18,      18]
       ]);
 
  var datam1 = google.visualization.arrayToDataTable([

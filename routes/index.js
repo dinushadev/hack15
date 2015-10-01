@@ -20,6 +20,9 @@ router.get('/scale', function(req, res) {
   res.render('scale');
 });
 
+router.get('/kpi', function(req, res) {
+  res.render('kpi');
+});
 
 
 
