@@ -1,0 +1,350 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+		 <link rel="stylesheet" href="css/style.css" />
+        <!-- Latest compiled and minified CSS -->
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+
+    </head>
+	<title>Registration</title>
+<style type="text/css">
+	.modal-dialog {
+    width: 1000px;
+}
+#panel000{
+	background-color: white;
+}
+
+.witeback {
+   background-color: #fff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+</style>
+<body>
+
+   <div class="navbar navbar-material-blue">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">GARFIELD</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li ><a href="home">HOME</a></li>
+            <li class="active"><a href="javascript:void(0)">NEW APP</a></li>
+
+        </ul>
+       
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0)">LOG OUT</a></li>
+            <li class="dropdown">
+                <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        <!-- Your site -->
+
+  <div align="center" class="container">
+		
+		<form class="form-horizontal">
+    <fieldset>
+	<div id="input"  style="width:500px; height:750px;  background-color: #ffffff;padding: 50px; display: block;">
+		<div class="inputs">
+				<h2>APP DETAILS</h2>
+				<input class="form-control" placeholder="Application Name" type="text">
+				<br/>
+				<select class="form-control" placeholder="Language">
+					<option value="Apple fritter">Language</option>
+					<option value="Donut">Java</option>
+					<option value="Financier"></option>
+					<option value="Jello">Python</option>
+					<option value="Madeleine">Madeleine</option>
+					<option value="Pound cake">Pound cake</option>
+					<option value="Pretzel">Pretzel</option>
+					<option value="Sfogliatelle">Sfogliatelle</option>
+				</select>
+				<br/>
+				<input class="form-control" placeholder="Repository" type="text">
+				<br/>
+				<select class="form-control" placeholder="Instance Type">
+					<option id="insId" value="Apple fritter" >Select Instance Type</option>
+		    <option >c3.2xlarge</option > 
+           <option >c3.4xlarge</option > 
+           <option >c3.8xlarge</option > 
+           <option >c3.large</option > 
+           <option >c3.xlarge</option > 
+           <option >d2.2xlarge</option > 
+           <option >d2.4xlarge</option > 
+           <option >d2.8xlarge</option > 
+           <option >d2.xlarge</option > 
+           <option >hs1.8xlarge</option > 
+           <option >i2.2xlarge</option > 
+           <option >i2.4xlarge</option > 
+           <option >i2.8xlarge</option > 
+           <option >i2.xlarge</option > 
+           <option >m3.2xlarge</option > 
+           <option >m3.large</option > 
+           <option >m3.medium</option > 
+           <option >m3.xlarge</option > 
+           <option >r3.2xlarge</option > 
+           <option >r3.4xlarge</option > 
+           <option >r3.8xlarge</option > 
+           <option >r3.large</option > 
+           <option >r3.xlarge</option > 
+           <option >t2.medium</option > 
+           <option >t2.micro</option > 
+           <option >t2.small</option > 
+					
+
+				</select>
+				<br/><br/>
+				<a href="javascript:void(0)"  class="btn btn-info" data-toggle="modal" data-target="#node-dis">Node Distribution</a>
+				<br/><br/>
+				<select class="form-control" placeholder="Instance Type">
+					<option id="insId" value="Apple fritter" >Puppet class</option>
+					<option value="Donut">C#</option>
+					<option value="Financier">C++</option>
+					<option value="Jello">Python</option>
+					<option value="Madeleine">Madeleine</option>
+					<option value="Pound cake">Pound cake</option>
+					<option value="Pretzel">Pretzel</option>
+					<option value="Sfogliatelle">Sfogliatelle</option>
+				</select>
+			<br/>
+			<div class="form-group">
+            <div align="left" class="col-lg-10">
+                <div class="radio radio-primary">
+                    <label>
+                        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                        HTTP
+                    </label>
+                </div>
+                <div class="radio radio-primary">
+                    <label>
+                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                        HTTPS
+                    </label>
+                </div>
+            </div>
+        </div>
+		
+				<br/>
+				<input class="form-control" placeholder="DNS" type="text">
+				<br/>
+				<button id="savebtn" class="btn btn-primary">Register</button>
+				<button id="cancelbtn" class="btn btn-default">Cancel</button>
+				
+
+		</div>
+		
+		</form>
+	
+</div>
+</fieldset>
+</form>
+</div>
+
+
+<div id="node-dis" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">SEVER DISTRIBUTION</h4>
+      </div>
+      <div class="modal-body">
+       <table id="zoneTable" class="table" >
+
+  <tr>
+  
+  	<td>
+		<!-- <div class="panel panel-primary" >
+			<div id="panel01" class="panel-heading">
+				<h3 class="panel-title">&nbsp;</h3>
+			</div>
+			<div class="panel-body" >
+				<table id="t01" class="table">
+					<tr>
+						<th>&nbsp;</th>
+					</tr>
+					<tr>
+						<td><b>Development</b></td>
+					</tr>
+					<tr>
+						<td><b>Staging</b></td>
+					</tr>
+					<tr>
+						<td><b>Production</b></td>
+					</tr>
+				</table>
+			</div>
+		</div> -->
+		<div id="panel01" class="panel panel-default">
+			<div class="witeback  panel-heading witeback">
+				<h3 class="panel-title">&nbsp;</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr >
+						<th>&nbsp;</th>
+					</tr>
+					<tr style="height: 45px;">
+						<td><b>Development</b></td>
+					</tr>
+					<tr  style="height: 45px;">
+						<td ><b>Staging</b></td>
+					</tr>
+					<tr  style="height: 45px;">
+						<td><b>Production</b></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+	<td>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-east-1</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>use1b</th>
+						<th>use1c</th>
+						<th>use1d</th>
+					</tr>
+					<tr>
+	
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+					<tr>
+
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+					<tr>
+		
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+	<td>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-west-1</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>usw1a</th>
+						<th>usw1b</th>
+					</tr>
+					<tr>
+						
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						
+					</tr>
+					<tr>
+						
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+	<td>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-west-2</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>usw2a</th>
+						<th>usw2b</th>
+						<th>usw2c</th>
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+  </tr>
+  </table>
+
+      </div>
+      <div class="modal-footer">
+      	 <button class="btn btn-default" data-dismiss="modal">cancel</button>
+        <button class="btn btn-primary" data-dismiss="modal">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Your site ends -->
+
+
+
+   
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+    </body>
+
+</html>

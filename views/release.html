@@ -1,0 +1,164 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+	    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+
+		<!-- Latest compiled and minified JavaScript -->
+		
+		<style type="text/css">
+
+.navbar {
+    margin-bottom: 0px;
+}	
+		</style>
+		
+    </head>
+	<title>Nim</title>
+<body>
+      
+   <div class="navbar navbar-material-blue">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">GARFIELD</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li ><a href="home">HOME</a></li>
+            <li ><a href="javascript:void(0)">NEW APP</a></li>
+
+        </ul>
+       
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0)">LOG OUT</a></li>
+            <li class="dropdown">
+                <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+	 <!-- Your site -->
+	 <div class="row" align="center">
+		<div class="panel panel-default"   	style="width:550px; height:670px;  background-color: #ffffff;padding: 50px;">
+	<div id="input"   style="display: block;">
+				<h2>Release</h2>
+				<br/>
+				<br/>
+				<select class="form-control" placeholder="Application Name" style="width:300px;">
+					<option value="Donut" selected>App 1</option>
+					<option value="Financier">App 2</option>
+					<option value="Jello">App 3</option>
+					<option value="Madeleine">App 4</option>
+					<option value="Pound cake">App 5</option>
+					<option value="Pretzel">App 6</option>
+					<option value="Sfogliatelle">App 7</option>
+				</select>
+				<br/>
+				<input class="form-control" placeholder="Version" type="text" style="width:300px;">
+				<br/>
+				<select class="form-control" placeholder="Environment" style="width:300px;" value>
+					<option value="Donut">Development</option>
+					<option value="Financier">Staging</option>
+					<option value="Jello" selected>Production</option>
+				</select>
+				<br/>
+				<br/>
+				 <table id="zoneTable" class="table" style="align:right;">
+
+  <tr >
+	<td class="notopline" style="border-top: 0px solid #ddd;">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-east-1</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>use1c</th>
+						<th>use1d</th>
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;" value="3"></td>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;" value="5"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+	<td style="border-top: 0px solid #ddd;">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-west-1</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>usw1a</th>
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;" value="4"></td>
+						
+					</tr>
+				</table>
+			</div>
+		</div>
+	</td>
+	<td style="border-top: 0px solid #ddd;">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">us-west-2</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>usw2a</th>
+
+					</tr>
+					<tr>
+						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;" value="2"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+				</td>
+				</tr>
+				</table>
+				<button id="cancelbtn" class="btn btn-default">Cancel</button>
+				<button id="savebtn" class="btn btn-primary">Release</button>
+
+		</div>
+	</div>
+</div>
+
+        <!-- Your site ends -->
+
+   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+</script>
+
+
+    </body>
+
+</html>

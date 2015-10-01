@@ -10,47 +10,53 @@
 
     <style type="text/css">
      /* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
+     -------------------------------------------------- */
+     html {
+      position: relative;
+      min-height: 100%;
+  }
+  body {
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
+  }
+  .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      background-color: #f5f5f5;
+  }
 
 
 /* Custom page CSS
 -------------------------------------------------- */
-   .yelBg{
+.yelBg{
 
     background-color: rgb(255, 152, 0);
     color:white;
-   }
-   .grnBg{
+}
+.grnBg{
     background-color: rgb(76, 175, 80);
     color:white;
-   }
+}
 
 
-    .redBg{
-        background-color: #F44336;
-         color:white;
-        }
+.redBg{
+    background-color: #F44336;
+    color:white;
+}
 
-  .classWithPad { margin:5px; padding:10px; }
-      
-    </style>
-   
+.classWithPad { margin:5px; padding:10px; }
+.iconFont{
+    font-size:60px;
+    text-align: center;
+
+}
+
+</style>
+
+
 
 </head>
 
@@ -68,15 +74,15 @@ body {
     <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="javascript:void(0)">History</a></li>
-            <li><a href="javascript:void(0)">Link</a></li>
-          
+            <li><a href="reg">NEW APP</a></li>
+
         </ul>
         <form class="navbar-form navbar-left">
-            <input type="text" class="form-control col-lg-8" placeholder="App Name">
+            <input type="text" class="form-control col-lg-8" placeholder="APP NAME">
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="javascript:void(0)">Link</a></li>
-            <li class="dropdown">
+            <li><a href="javascript:void(0)">LOG OUT</a></li>
+       <!--      <li class="dropdown">
                 <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="javascript:void(0)">Action</a></li>
@@ -85,7 +91,7 @@ body {
                     <li class="divider"></li>
                     <li><a href="javascript:void(0)">Separated link</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
     </div>
 </div>
@@ -104,101 +110,116 @@ body {
       <div class="row">
           <div class="redBg panel panel-material-red redBg">
             <div class="panel-body panel-body-material-red ">
-             <div class="row">
-               <div class="col-md-2">
-                   
-                   <a href="javascript:void(0)" class="btn btn-flat btn-primary">Primary</a>
-               </div>
-                 <div class="col-md-1 classWithPad shadow-z-1">
-                    <h4>10</h4>
-                   <h4>m1.large</h4>
-               </div>
-                <div class="col-md-1 classWithPad shadow-z-1">
-                    <h4>2</h4>
-                   <h4>HAProxy</h4>
-               </div>
-                 <div class="col-md-2">
-                       <div id="chartcpu_div" style="width: 200px; height: 120px;"></div>
-               </div>
-               <div class="col-md-2">
-                       <div id="chartmem_div" style="width: 200px; height: 120px;"></div>
-               </div>
-                <div class="col-md-2">
-                    
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">DEPLOY</a>
-                <a href="javascript:void(0)" class="btn btn-success btn-raised">&nbsp;SCALE &nbsp;</a>
-               </div>
-               </div>
-            </div>
-      
+             <div align="center" class="row">
+               <div align="center" class="col-md-2">
 
+                   <i class="fa mdi-action-dns iconFont"></i>
+
+                   <div ><H3>PORTELLO</H3></div>
+               </div>
+
+               <div class="col-md-1 classWithPad shadow-z-1">
+                <h4>10</h4>
+                <h4>m1.large</h4>
+            </div>
+            <div class="col-md-1 classWithPad shadow-z-1">
+                <h4>2</h4>
+                <h4>HAProxy</h4>
+            </div>
+            <div class="col-md-1 classWithPad shadow-z-1">
+
+               <h4>some this</h4>
+           </div>
+           <div class="col-md-2">
+               <div id="chartcpu_div" style="width: 200px; height: 120px;"></div>
+           </div>
+           <div class="col-md-2">
+               <div id="chartmem_div" style="width: 200px; height: 120px;"></div>
+           </div>
+           <div class="col-md-2">
+
+            <a href="release" class="btn btn-primary btn-raised">release</a>
+            <a href="scale" class="btn btn-success btn-raised">&nbsp;&nbsp;SCALE &nbsp;&nbsp;</a>
+            <a href="javascript:void(0)" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
+        </div>
     </div>
-   </div>
-    
-          <div class="row">
-          <div class="yelBg panel panel-material-red ">
-            <div class="panel-body panel-body-material-red ">
-             <div class="row">
-               <div class="col-md-2 classWithPad">
-                   <h3>MLPUI</h3>
-               </div>
-                 <div class="col-md-1 classWithPad shadow-z-1">
-                    <h4>12</h4>
-                   <h4>C1.Large</h4>
-               </div>
-                <div class="col-md-1 classWithPad shadow-z-1">
-                    <h4>2</h4>
-                   <h4>HAProxy</h4>
-               </div>
-                 <div class="col-md-2 ">
-                       <div id="chartcpu_div" style="width: 200px; height: 120px;"></div>
-               </div>
-               <div class="col-md-2">
-                       <div id="chartmem_div" style="width: 200px; height: 120px;"></div>
-               </div>
-                <div class="col-md-2">
-                    
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">DEPLOY</a>
-                <a href="javascript:void(0)" class="btn btn-success btn-raised">&nbsp;SCALE &nbsp;</a>
-               </div>
-               </div>
-            </div>
-      </div>
+</div>
 
 
-   </div>
-         <div class="row">
-          <div class="grnBg panel panel-material-red ">
-            <div class="panel-body panel-body-material-red ">
-             <div class="row">
-               <div class="col-md-4">
-                   <h3>PORTELLO</h3>
-               </div>
-                 <div class="col-md-4">
-                   m1.large
-               </div>
-                 <div class="col-md-4">
-                   PORTELLO
-               </div>
-               </div>
-            </div>
-      
+</div>
+</div>
 
+<div class="row">
+  <div class="yelBg panel panel-material-red ">
+    <div class="panel-body panel-body-material-red ">
+     <div align="center" class="row">
+       <div align="center" class="col-md-2 ">
+         <i class="fa mdi-action-dns iconFont"></i>
+
+         <div align="center"><H3>MLPUI</H3></div>
+     </div>
+     <div class="col-md-1 classWithPad shadow-z-1">
+        <h4>12</h4>
+        <h4>C1.Large</h4>
     </div>
-   </div>
-    <hr>
+    <div class="col-md-1 classWithPad shadow-z-1">
+        <h4>2</h4>
+        <h4>HAProxy</h4>
+    </div>
+    <div class="col-md-1 classWithPad shadow-z-1">
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">&copy; Pearson 2015</p>
-      </div>
-    </footer>
+       <h4>some this</h4>
+   </div>
+   <div class="col-md-2 ">
+       <div id="chartcpu1_div" style="width: 200px; height: 120px;"></div>
+   </div>
+   <div class="col-md-2">
+       <div id="chartmem1_div" style="width: 200px; height: 120px;"></div>
+   </div>
+   <div class="col-md-2">
+
+    <a href="release" class="btn btn-primary btn-raised">release</a>
+    <a href="scale" class="btn btn-success btn-raised">&nbsp;&nbsp;SCALE &nbsp;&nbsp;</a>
+    <a href="javascript:void(0)" class="btn btn-info btn-raised">&nbsp;&nbsp;MORE &nbsp;&nbsp;</a>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- <div class="row">
+  <div class="grnBg panel panel-material-red ">
+    <div class="panel-body panel-body-material-red ">
+     <div class="row">
+       <div class="col-md-4">
+           <h3>PORTELLO</h3>
+       </div>
+       <div class="col-md-4">
+           m1.large
+       </div>
+       <div class="col-md-4">
+           PORTELLO
+       </div>
+   </div>
+</div>
+
+
+</div>
+</div> -->
+<hr>
+
+
 </div> <!-- /container -->
-
+<footer class="footer" style="background-color: #E6E6E6;">
+  <div class="container">
+    <p class="text-muted">&copy; Pearson 2015, Version 1.0.0.6</p>
+</div>
+</footer>
 
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
- <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <script src="js/ripples.min.js"></script>
 <script src="js/material.min.js"></script>
@@ -211,41 +232,137 @@ body {
 
 </script>
 
- <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-        ]);
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var datac = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  5,      7],
+      ['MAY',  6,      10],
+      ['JUNE',  4,       5],
+      ['JULY',  11,      20],
+       ['AUG',  20,      18],
+        ['SEP',  16,      18]
+      ]);
 
-        var options = {
-          title: 'CPU',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0},
-          backgroundColor: '#F44336',
-          hAxis:{
-           
-             textStyle:{ color:'white' }
-          },
-          vAxis:{
-           
-             textStyle:{ color:'white' }
-          },
-           titleTextStyle:{ color:'white' }
-        };
+ var datam = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  20,      14],
+      ['MAY',  10,      10],
+      ['JUNE',  25,       18],
+      ['JULY',  17,      20],
+       ['AUG',  30,      30],
+        ['SEP',  20,      18]
+      ]);
+    var optionscpu = {
+      title: 'CPU',
+      hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+      vAxis: {minValue: 0},
+      backgroundColor: '#F44336',
+      hAxis:{
 
-        var chartcpu = new google.visualization.AreaChart(document.getElementById('chartcpu_div'));
-        chartcpu.draw(data, options);
+         textStyle:{ color:'white' }
+     },
+     vAxis:{
 
-         var chartmem = new google.visualization.AreaChart(document.getElementById('chartmem_div'));
-        chartmem.draw(data, options);
-      }
-    </script>
+         textStyle:{ color:'white' }
+     },
+     titleTextStyle:{ color:'white' }
+ };
+
+ var optionsmem = {
+  title: 'MEMORY',
+  hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+  vAxis: {minValue: 0},
+  backgroundColor: '#F44336',
+  hAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ vAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ titleTextStyle:{ color:'white' }
+};
+
+var chartcpu = new google.visualization.AreaChart(document.getElementById('chartcpu_div'));
+chartcpu.draw(datac, optionscpu);
+
+var chartmem = new google.visualization.AreaChart(document.getElementById('chartmem_div'));
+chartmem.draw(datam, optionsmem);
+
+
+  var datac1 = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  5,      7],
+      ['MAY',  6,      10],
+      ['JUNE',  4,       5],
+      ['JULY',  11,      20],
+       ['AUG',  20,      18],
+        ['SEP',  16,      18]
+      ]);
+
+ var datam1 = google.visualization.arrayToDataTable([
+      ['Month', 'Sales', 'Expenses'],
+      ['APR',  20,      14],
+      ['MAY',  10,      10],
+      ['JUNE',  25,       18],
+      ['JULY',  17,      20],
+       ['AUG',  30,      30],
+        ['SEP',  20,      18]
+      ]);
+
+var options1cpu = {
+  title: 'CPU',
+  hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+  vAxis: {minValue: 0},
+  backgroundColor: 'rgb(255, 152, 0)',
+  hAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ vAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ titleTextStyle:{ color:'white' }
+};
+
+var options1mem = {
+  title: 'MEMORY',
+  hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+  vAxis: {minValue: 0},
+  backgroundColor: 'rgb(255, 152, 0)',
+  hAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ vAxis:{
+
+     textStyle:{ color:'white' }
+ },
+ titleTextStyle:{ color:'white' }
+};
+
+
+var chartcpu1 = new google.visualization.AreaChart(document.getElementById('chartcpu1_div'));
+chartcpu1.draw(datac1, options1cpu);
+
+var chartmem1 = new google.visualization.AreaChart(document.getElementById('chartmem1_div'));
+chartmem1.draw(datam1, options1mem);
+}
+</script>
+
+
+
+
+
+
+
+
+
 
 </body>
 
