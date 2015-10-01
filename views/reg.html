@@ -26,7 +26,24 @@
 .navbar {
     margin-bottom: 0px;
 }
+
+.hide{  display: none;}
 </style>
+
+		<script type="text/javascript">
+
+				function progress(){
+					$("#progressdiv").removeClass("hide");
+					setTimeout(progressAddClass, 3000);
+				}
+
+				function progressAddClass(){
+					$("#progressdiv").addClass("hide");
+					$("#alertok").removeClass("hide");
+					
+				}
+
+</script>
 <body>
 
    <div class="navbar navbar-material-blue">
@@ -36,11 +53,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">GARFIELD</a>
+        <a class="navbar-brand" href="home">GARFIELD</a>
+                    <img width="80" height="50" alt="server" src="../dist/img/garfieldcat.png">
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-            <li ><a href="home">HOME</a></li>
             <li class="active"><a href="javascript:void(0)">NEW APP</a></li>
 
         </ul>
@@ -61,25 +78,28 @@
     </div>
 </div>
         <!-- Your site -->
-
+<div id="progressdiv" class="progress progress-striped active hide" style="height: 8px;">
+  <div class="progress-bar" style="width: 100%; background-color: #4CAF50; "></div>
+</div>
   <div align="center" class="container">
 		
-		<form class="form-horizontal">
+	
     <fieldset>
 	<div id="input"  style="width:500px; height:750px;  background-color: #ffffff;padding: 50px; display: block;">
 		<div class="inputs">
 				<h2>APP DETAILS</h2>
+								<div id="alertok" class="alert alert-dismissable alert-success hide">
+    				<button type="button" class="close" data-dismiss="alert">×</button>
+    				<strong>Successfully Released.</strong>
+				</div>
+
 				<input class="form-control" placeholder="Application Name" type="text">
 				<br/>
 				<select class="form-control" placeholder="Language">
 					<option value="Apple fritter">Language</option>
 					<option value="Donut">Java</option>
-					<option value="Financier"></option>
 					<option value="Jello">Python</option>
-					<option value="Madeleine">Madeleine</option>
-					<option value="Pound cake">Pound cake</option>
-					<option value="Pretzel">Pretzel</option>
-					<option value="Sfogliatelle">Sfogliatelle</option>
+					<option value="Sfogliatelle">NodeJS</option>
 				</select>
 				<br/>
 				<input class="form-control" placeholder="Repository" type="text">
@@ -149,13 +169,13 @@
 				<br/>
 				<input class="form-control" placeholder="DNS" type="text">
 				<br/>
-				<button id="savebtn" class="btn btn-primary">Register</button>
+				<button id="savebtn" class="btn btn-primary" onclick="progress()">Register</button>
 				<button id="cancelbtn" class="btn btn-default">Cancel</button>
 				
 
 		</div>
 		
-		</form>
+
 	
 </div>
 </fieldset>
