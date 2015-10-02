@@ -34,7 +34,7 @@
 
 				function progress(){
 					$("#progressdiv").removeClass("hide");
-					setTimeout(progressAddClass, 3000);
+					setTimeout(progressAddClass, 1000);
 				}
 
 				function progressAddClass(){
@@ -96,16 +96,16 @@
 				<input class="form-control" placeholder="Application Name" type="text">
 				<br/>
 				<select class="form-control" placeholder="Language">
-					<option value="Apple fritter">Language</option>
+					<option value="Sfogliatelle">NodeJS</option>
 					<option value="Donut">Java</option>
 					<option value="Jello">Python</option>
-					<option value="Sfogliatelle">NodeJS</option>
+					
 				</select>
 				<br/>
 				<input class="form-control" placeholder="Repository" type="text">
 				<br/>
 				<select class="form-control" placeholder="Instance Type">
-					<option id="insId" value="Apple fritter" >Select Instance Type</option>
+					<option id="insId" value="Apple fritter" >m1.large</option>
 		    <option >c3.2xlarge</option > 
            <option >c3.4xlarge</option > 
            <option >c3.8xlarge</option > 
@@ -140,7 +140,7 @@
 				<br/><br/>
 				<select class="form-control" placeholder="Instance Type">
 					<option id="insId" value="Apple fritter" >Puppet class</option>
-					<option value="Donut">C#</option>
+					<option value="Donut">NodeJS</option>
 					<option value="Financier">C++</option>
 					<option value="Jello">Python</option>
 					<option value="Madeleine">Madeleine</option>
@@ -167,7 +167,7 @@
         </div>
 		
 				<br/>
-				<input class="form-control" placeholder="DNS" type="text">
+				<input class="form-control" placeholder="DNS" value="test.openclass.com" type="text">
 				<br/>
 				<button id="savebtn" class="btn btn-primary" onclick="progress()">Register</button>
 				<button id="cancelbtn" class="btn btn-default">Cancel</button>
@@ -253,21 +253,21 @@
 					</tr>
 					<tr>
 	
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"  type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"  type="number" style="width: 60px;"></td>
 					</tr>
 					<tr>
 
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0"  type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0" type="number" style="width: 60px;"></td>
 					</tr>
 					<tr>
 		
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="0" type="number" style="width: 60px;"></td>
 					</tr>
 				</table>
 			</div>
@@ -286,19 +286,19 @@
 					</tr>
 					<tr>
 						
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"  value="2" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="2" type="number" style="width: 60px;"></td>
 						
 					</tr>
 					<tr>
 						
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="3" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="3" type="number" style="width: 60px;"></td>
 						
 					</tr>
 					<tr>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"  value="5"  type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="5"  type="number" style="width: 60px;"></td>
 						
 					</tr>
 				</table>
@@ -319,18 +319,18 @@
 					</tr>
 					<tr>
 						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
 					</tr>
 					<tr>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0"   type="number" style="width: 60px;"></td>
 					</tr>
 					<tr>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
-						<td align="center"><input class="form-control" placeholder="0" type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="5"  type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="5"  type="number" style="width: 60px;"></td>
+						<td align="center"><input class="form-control" placeholder="0" value="5"  type="number" style="width: 60px;"></td>
 					</tr>
 				</table>
 			</div>
